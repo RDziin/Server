@@ -1,0 +1,19 @@
+curl -X POST http://localhost:3333/videos \
+-H "Content-Type: application/json" \
+-d '{"title": "Video 01", "description": "Video novo", "duration": 210}'
+
+###
+
+curl -X GET http://localhost:3333/videos
+
+###
+
+curl -X PUT http://localhost:3333/videos/\
+-H "Content-Type: application/json" \
+-d '{"title": "Video de Hoje", "description": "Video novo", "duration": 600}'
+
+###
+
+curl -X DELETE http://localhost:3333/videos/\
+-H "Content-Type: application/json" \
+-d '{"title": "Video de Hoje", "description": "Video novo", "duration": 600}'
